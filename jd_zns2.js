@@ -75,17 +75,17 @@ function ruhui(){
  */
 function init() {
  
-//     // 子线程监听脚本
-//     threads.start(function () {
-//         events.setKeyInterceptionEnabled("volume_up", true);
-//         //启用按键监听
-//         events.observeKey();
-//         //监听音量上键按下
-//         events.onKeyDown("volume_up", function (event) {
-//             console.log("脚本退出!")
-//             exit();
-//         });
-//     });
+    // 子线程监听脚本
+    threads.start(function () {
+        events.setKeyInterceptionEnabled("volume_up", true);
+        //启用按键监听
+        events.observeKey();
+        //监听音量上键按下
+        events.onKeyDown("volume_up", function (event) {
+            console.log("脚本退出!")
+            exit();
+        });
+    });
     alert("脚本执行过程请勿手动点击屏幕，否则脚本执行可能会错乱，导致任务失败\n执行过程中可按音量+键终止\n");
     alert("需要手动点击进入京东炸年兽页面，然后点击做任务集爆竹，弹出任务界面即可\n");
     alert("中间卡住需自己点击\n城城任务\n\n去AR玩游戏任务\n然后继续运行即可");
