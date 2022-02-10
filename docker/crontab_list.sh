@@ -294,3 +294,15 @@
 0 0 * * * node /scripts/jd_mall.js >>/scripts/logs/jd_mall.log 2>&1
 #整点红包雨
 0 * * * * node /scripts/jd_redrain.js >>/scripts/logs/jd_redrain.log 2>&1
+#年货节红包
+0 0,10,20 * * * node /scripts/jd_nhRedEnvelope.js >>/scripts/logs/jd_nhRedEnvelope.log 2>&1
+#京东到家果园
+10 0,3,8,11,17 * * * node /scripts/jd_djfruit.js >>/scripts/logs/jd_djfruit.log 2>&1
+#京东到家果园水车收水滴
+5 */1 * * * node /scripts/jd_djfruitCollectWater.js >>/scripts/logs/jd_djfruitCollectWater.log 2>&1
+#京东到家鲜豆
+10 0 * * * node /scripts/jd_djbean.js >>/scripts/logs/jd_djbean.log 2>&1
+#京东到家鲜豆庄园
+11 0 * * * node /scripts/jd_djplantBeans.js >>/scripts/logs/jd_djplantBeans.log 2>&1
+#京东到家鲜豆庄园收水滴
+7 */1 * * * node /scripts/jd_djgetPoints.js >>/scripts/logs/jd_djgetPoints.log 2>&1
